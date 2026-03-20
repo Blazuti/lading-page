@@ -1,6 +1,7 @@
 import React from "react";
-import Title_biogrphy from "./imgs/title_biography.png";
+import Title_biogrphy from "../pages/styles/queries/desktop/midias/title_biography.png";
 import '../pages/styles/biography.css'
+import '../pages/styles/queries/cell/cell.css'
 
 export default function biography() {
   return (
@@ -14,7 +15,7 @@ export default function biography() {
           <p>
             Minha história com a modificação corporal começou em 2017. Em 2019,
             mergulhei na especialização para transformar a paixão em uma carreira
-            técnica e responsável. Hoje, com 7 anos de experiência, vejo cada
+            técnica e responsável. Hoje, com mais de 7 anos de experiência, vejo cada
             perfuração — seja um delicado Tragus, um clássico no Umbigo ou a
             técnica avançada de um Microdermal — como uma forma de elevar a
             autoestima e a identidade de quem me procura.

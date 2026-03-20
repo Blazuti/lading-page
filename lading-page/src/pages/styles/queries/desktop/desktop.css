@@ -1,0 +1,7 @@
+@media screen and (min-width:1025px){
+    .my_photo{
+        background-image: url('../cell/midias/my_photo_cell.gif');
+        background-size: contain;
+        background-position: center center;
+    }
+}
