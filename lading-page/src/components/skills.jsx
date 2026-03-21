@@ -1,14 +1,9 @@
 import React from "react";
-
-
-
 export default function skills() {
   return (
-    <div className="container_skills">
-      <div className="container_img_skills">
-        <img src={Img_my_skills} alt="image text of skills" />
-      </div>
-      <div className="description_skills">
+    <section className="skills">
+      <div className="container_img_skills"></div>
+      {/*<div className="description_skills">
         <p>
           <li>
             <ul>Bio Segurança e Esterilização</ul>
@@ -26,11 +21,13 @@ export default function skills() {
             <ul>Conhecimento de Jóias</ul>
           </li>
         </p>
-      </div>
-      <div class="container">
+      </div>*/}
+      <div class="container_skills">
         <div class="card">
-          <div class="icon">💎</div>
-          <h3>Alta Precisão</h3>
+          <div className="title_card">
+            <div class="icon">💎</div>
+            <h3>Alta Precisão</h3>
+          </div>
           <p>
             Perfurações técnicas em Orelha, Umbigo e Microdermais, respeitando a
             anatomia individual.
@@ -38,23 +35,27 @@ export default function skills() {
         </div>
 
         <div class="card">
-          <div class="icon">🛡️</div>
-          <h3>Biossegurança</h3>
+          <div className="title_card">
+            <div class="icon">🛡️</div>
+            <h3>Biossegurança</h3>
+          </div>
           <p>
             Protocolos rigorosos de esterilização e uso exclusivo de joalheria
-            de alto padrão (Titânio/Grau Implante).
+            de alto padrão (Titânio).
           </p>
         </div>
 
         <div class="card">
-          <div class="icon">✨</div>
-          <h3>Acompanhamento</h3>
+          <div className="title_card">
+            <div class="icon">✨</div>
+            <h3>Acompanhamento</h3>
+          </div>
           <p>
             Suporte humanizado em todas as etapas, garantindo uma cicatrização
             saudável e assistida.
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

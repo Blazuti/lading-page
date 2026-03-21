@@ -1,10 +1,10 @@
 import React from "react";
+import Video from "./media/video_cover.mp4"
 
-export default function header(){
+export default function cover(){
     return(
-        <header>
-            <div className="my_photo">
-            </div>
-        </header>
+        <section className="cover">
+            <video src={Video} autoPlay loop></video>
+        </section>
     )
 }
