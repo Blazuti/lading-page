@@ -1,5 +1,4 @@
 import React from "react";
-import Title_biogrphy from "../pages/styles/queries/desktop/midias/title_biography.png";
 
 export default function biography() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Img_my_skills from "../pages/styles/queries/desktop/midias/text_my_skills.png"
+
 
 
 export default function skills() {
