@@ -1,7 +1,5 @@
 import React from "react";
 import Title_biogrphy from "../pages/styles/queries/desktop/midias/title_biography.png";
-import '../pages/styles/biography.css'
-import '../pages/styles/queries/cell/cell.css'
 
 export default function biography() {
   return (
