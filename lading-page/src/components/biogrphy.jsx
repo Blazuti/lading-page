@@ -12,14 +12,16 @@ export default function biography() {
           <p>
             Minha história com a modificação corporal começou em 2017. Em 2019,
             mergulhei na especialização para transformar a paixão em uma
-            carreira técnica e responsável. Hoje, com mais de 7 anos de
-            experiência, vejo cada perfuração — seja um delicado Tragus, um
+            carreira técnica e responsável. Hoje, com mais de <strong>
+              7 anos de
+              experiência
+            </strong>, vejo cada trabalho — seja um delicado Tragus, um
             clássico no Umbigo ou a técnica avançada de um Microdermal — como
             uma forma de elevar a autoestima e a identidade de quem me procura.
           </p>
           <p>
             Acredito que o meu trabalho não termina no momento da perfuração.
-            Meu compromisso é com a saúde do cliente, por isso dedico máxima
+            Meu compromisso é com a <strong>saúde do cliente</strong>, por isso dedico máxima
             atenção ao acompanhamento de cada caso, garantindo que o processo de
             cicatrização seja perfeito.
           </p>
