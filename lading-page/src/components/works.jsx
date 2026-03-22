@@ -4,34 +4,59 @@ import Orelha002 from "../components/media/imgs/piercing_orelha002.png";
 
 export default function works() {
   return (
-    <div className="contain_works">
-      <div className="photos">
-        <div className="photos_inline">
-            <img src={Orelha001} alt="" />
+    <div className="works">
+      <div className="contain_works">
+        <h1>My Works</h1>
+        <div className="container_photos_inline">
+          <div className="container_photo">
+            <div className="photo">
+              <img src={Orelha001} alt="" />
+            </div>
+          </div>
+
+          <div className="container_photo">
+            <div className="photo">
+              <img src={Orelha002} alt="" />
+            </div>
+          </div>
+
+          <div className="container_photo">
+            <div className="photo"></div>
+          </div>
         </div>
-        <div className="photos_inline">
-            <img src={Orelha002} alt="" />
+
+         <div className="container_photos_inline">
+          <div className="container_photo">
+            <div className="photo"></div>
+          </div>
+
+          <div className="container_photo">
+            <div className="photo"></div>
+          </div>
+
+          <div className="container_photo">
+            <div className="photo"></div>
+          </div>
         </div>
-        <div className="photos_inline">
-            <img src={Orelha002} alt="" />
+
+         <div className="container_photos_inline">
+          <div className="container_photo">
+            <div className="photo"></div>
+          </div>
+
+          <div className="container_photo">
+            <div className="photo"></div>
+          </div>
+
+          <div className="container_photo">
+            <div className="photo"></div>
+          </div>
         </div>
+
+        
+
+
       </div>
-      <div className="photos">
-        <div className="photos_inline"></div>
-        <div className="photos_inline"></div>
-        <div className="photos_inline"></div>
-      </div>
-      <div className="photos">
-        <div className="photos_inline"></div>
-        <div className="photos_inline"></div>
-        <div className="photos_inline"></div>
-      </div>
-      <div className="photos">
-        <div className="photos_inline"></div>
-        <div className="photos_inline"></div>
-        <div className="photos_inline"></div>
-      </div>
-      <div className="description_photos"></div>
     </div>
   );
 }

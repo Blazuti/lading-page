@@ -5,14 +5,18 @@
 }
 
 :root{
-    --color-background: #dab8a6;
-    --color-font: #183150;
+    --color-background: #e0dcd1;
+    --color-font: #1A1A1A;
+    --color-cards: #F2F2F2;
+    --color-elements: #BC8A5F;
+    --color-shadow: #D4AF37;
 }
 
 body{
     width: 100vw;
     height: auto;
-    background-color: #dab8a6;
+    background-color: var(--color-background);
+    position: static;
 }
 
 p{
@@ -81,10 +85,11 @@ p{
     font-family: 'lora', Arial, Helvetica, sans-serif;
     color: var(--color-font);
     width: 80%;
-    background-color: rgba(255, 255, 255, 0.184);
+    background-color: var(--color-cards);
     padding: 20px 10px;
     border-radius: 8px;
-    border-left: 6px solid var(--color-font);
+    box-shadow: 1px 1px 5px var(--color-shadow);
+    border-left: 6px solid var(--color-elements);
 
     display: flex;
     flex-flow: column nowrap;
@@ -117,35 +122,65 @@ p{
 
 /* Works */
 
-.contain_works{
+.works{
     margin: auto;
-    max-width: 95%;
+    max-width: 90%;
     height: 100vh;
-    padding: 20px 0px;
+
+    display: flex;
+    align-items: center;
+    
+}
+.contain_works{
+    width: 100%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.507);
+    padding: 20px 10px; 
+    border-radius: 12px 12px 0px 0px; 
+    box-shadow: 2px 2px 8px var(--color-elements); 
 
     display: flex;
     flex-flow: column nowrap;
+
+    h1{
+        font-size: 2.2em;
+        margin-bottom: 20px;
+        color: var(--color-font);
+    }
     
 }
 
-.photos{
+.container_photos_inline{
     width: 100%;
-    height: 20%;
+    height: 25%;
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     gap: 5px;
+    margin-bottom: 10px;
+    
 }
 
-.photos_inline{
+.container_photo{
     width: 33%;
     height: 100%;
-    
+    background-color: white;
+    border: 1px solid rgba(137, 137, 137, 0.558);
+    border-radius: 8px 0px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.185);
 
+}
+
+.photo{
+    width: 100%;
+    height: 80%;
+    background-color: grey;
+    border-radius: 8px 0px;
+    
 }
 img{
     max-width: 100%;
     min-height: 100%;
-    border-radius: 8px;
+    border-radius: 8px 0px 3px 3px;
 }
