@@ -1,6 +1,7 @@
 import React from "react";
-import Orelha001 from "../components/media/imgs/piercing_orelha.png";
-import Orelha002 from "../components/media/imgs/piercing_orelha002.png";
+import Orelha001 from "../media/imgs/piercing_orelha.png";
+import Orelha002 from "../media/imgs/piercing_orelha002.png";
+import './works.module.css'
 
 export default function works() {
   return (

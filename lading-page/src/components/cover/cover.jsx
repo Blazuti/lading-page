@@ -1,5 +1,6 @@
 import React from "react";
-import Video from "./media/video_cover.mp4"
+import Video from "../media/video_cover.mp4"
+import './cover.module.css'
 
 export default function cover(){
     return(

@@ -1,0 +1,27 @@
+
+@media (max-width: 768px){
+
+.my_biography{
+    height: 100vh;
+    max-width: 80%;
+    margin: auto;
+}
+
+.my_biography{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.text_biography{
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.title_biography img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 35px;
+}
+}

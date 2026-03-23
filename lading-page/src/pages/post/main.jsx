@@ -1,8 +1,9 @@
 import React from "react";
-import Cover from "../../components/cover"
-import Biography from "../../components/biogrphy"
-import Skills from "../../components/skills"
-import Works from "../../components/works"
+import Cover from "../../components/cover/cover"
+import Biography from "../../components/biography/biography"
+import Skills from "../../components/skills/skills"
+import Works from "../../components/works/works"
+
 
 export default function main(){
 

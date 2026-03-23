@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import Index from './pages/category'
 
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Index />

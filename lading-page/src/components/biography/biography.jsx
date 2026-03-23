@@ -1,5 +1,6 @@
 import React from "react";
-import Title_biography from "../components/media/imgs/title_biography.png"
+import Title_biography from "../media/imgs/title_biography.png"
+import './biography.module.css'
 
 export default function biography() {
   return (

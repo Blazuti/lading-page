@@ -1,0 +1,57 @@
+@media (max-width: 768px){
+    .skills{
+    height: 100vh;
+    max-width: 80%;
+    margin: auto;
+}
+
+.container_skills{
+    height: 100%;
+    width: 100%;
+    padding: 50px 0px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_skills{
+    font-family: 'lora', Arial, Helvetica, sans-serif;
+    color: var(--color-font);
+    width: 80%;
+    background-color: var(--color-cards);
+    padding: 20px 10px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px var(--color-shadow);
+    border-left: 6px solid var(--color-elements);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    .title_card{
+        margin-bottom: 20px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+
+    p{
+        text-align: justify;
+        margin-bottom: 0px;
+        hyphens: auto;
+    }
+
+    h3{
+        font-size: 1.3em;
+        color: var(--color-font);
+    }
+}
+
+.icon img{
+    width: 30px;
+}
+
+}

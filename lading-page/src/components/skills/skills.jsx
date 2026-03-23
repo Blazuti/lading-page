@@ -1,7 +1,8 @@
 import React from "react";
-import Icon_diamond from "../components/media/icon/diamond.png"
-import Icon_segurity from "../components/media/icon/segurity.png"
-import Icon_star from "../components/media/icon/star.png"
+import Icon_diamond from "../media/icon/diamond.png"
+import Icon_segurity from "../media/icon/segurity.png"
+import Icon_star from "../media/icon/star.png"
+import './skills.module.css'
 
 export default function skills() {
   return (
