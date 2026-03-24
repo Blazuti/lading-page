@@ -1,15 +1,15 @@
 import React from "react";
 import Title_biography from "../media/imgs/title_biography.png"
-import './biography.module.css'
+import style from './biography.module.css'
 
 export default function biography() {
   return (
-    <section className="my_biography">
-      <div className="biography">
-        <div className="title_biography">
-          <img src={Title_biography} alt="" />
+    <section className={style.my_biogephy}>
+      <div className={style.biography}>
+        <div className={style.title_biography}>
+          <img src={Title_biography} alt="imagem titulo" />
         </div>
-        <div className="text_biography">
+        <div className={style.text_biography}>
           <p>
             Minha história com a modificação corporal começou em 2017. Em 2019,
             mergulhei na especialização para transformar a paixão em uma

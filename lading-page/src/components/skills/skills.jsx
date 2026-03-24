@@ -2,12 +2,12 @@ import React from "react";
 import Icon_diamond from "../media/icon/diamond.png"
 import Icon_segurity from "../media/icon/segurity.png"
 import Icon_star from "../media/icon/star.png"
-import './skills.module.css'
+import style from './skills.module.css'
 
 export default function skills() {
   return (
-    <section className="skills">
-      <div className="container_img_skills"></div>
+    <section className={style.skills}>
+      <div className={style.container_img_skills}></div>
       {/*<div className="description_skills">
         <p>
           <li>
@@ -27,10 +27,10 @@ export default function skills() {
           </li>
         </p>
       </div>*/}
-      <div class="container_skills">
-        <div class="card_skills">
-          <div className="title_card">
-            <div class="icon">
+      <div class={style.container_skills}>
+        <div class={style.card_skills}>
+          <div className={style.title_card}>
+            <div class={style.icon}>
               <img src={Icon_diamond} alt="img diamond" /></div>
             <h3>Alta Precisão</h3>
           </div>
@@ -40,9 +40,9 @@ export default function skills() {
           </p>
         </div>
 
-        <div class="card_skills">
-          <div className="title_card">
-            <div class="icon">
+        <div class={style.card_skills}>
+          <div className={style.title_card}>
+            <div class={style.icon}>
               <img src={Icon_segurity} alt="img segurity" />
             </div>
             <h3>Biossegurança</h3>
@@ -53,9 +53,9 @@ export default function skills() {
           </p>
         </div>
 
-        <div class="card_skills">
-          <div className="title_card">
-            <div class="icon">
+        <div class={style.card_skills}>
+          <div className={style.title_card}>
+            <div class={style.icon}>
               <img src={Icon_star} alt="img stars" />
             </div>
             <h3>Acompanhamento</h3>
