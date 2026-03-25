@@ -27,10 +27,10 @@ export default function skills() {
           </li>
         </p>
       </div>*/}
-      <div class={style.container_skills}>
-        <div class={style.card_skills}>
+      <div className={style.container_skills}>
+        <div className={style.card_skills}>
           <div className={style.title_card}>
-            <div class={style.icon}>
+            <div className={style.icon}>
               <img src={Icon_diamond} alt="img diamond" /></div>
             <h3>Alta Precisão</h3>
           </div>
@@ -40,9 +40,9 @@ export default function skills() {
           </p>
         </div>
 
-        <div class={style.card_skills}>
+        <div className={style.card_skills}>
           <div className={style.title_card}>
-            <div class={style.icon}>
+            <div className={style.icon}>
               <img src={Icon_segurity} alt="img segurity" />
             </div>
             <h3>Biossegurança</h3>
@@ -53,9 +53,9 @@ export default function skills() {
           </p>
         </div>
 
-        <div class={style.card_skills}>
+        <div className={style.card_skills}>
           <div className={style.title_card}>
-            <div class={style.icon}>
+            <div className={style.icon}>
               <img src={Icon_star} alt="img stars" />
             </div>
             <h3>Acompanhamento</h3>
