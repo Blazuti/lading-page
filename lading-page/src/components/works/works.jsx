@@ -29,7 +29,7 @@ export default function works() {
         <div className={style.container_photos_inline}>
           <div className={style.container_photo}>
             <div className={style.photo}>
-              <ImageModal imageSrc={images.trabalho001} alt="foto trabalho" />
+              <ImageModal imageSrc={images.trabalho001} alt="foto trabalho" list={images} />
             </div>
           </div>
 
