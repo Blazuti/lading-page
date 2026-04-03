@@ -1,96 +1,99 @@
-.modalOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-
-.modalOverlay.open {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modalContent {
-  position: relative;
-  max-width: 90%;
-  max-height: 90%;
-  transform: scale(0.8);
-  transition: transform 0.3s ease;
-}
-
-.modalOverlay.open .modalContent {
-  transform: scale(1);
-}
-
-@keyframes fadeIn {
-  from {
+@media (max-width: 768px){
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
     opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
   }
-  to {
+
+  .modalOverlay.open {
     opacity: 1;
+    pointer-events: auto;
   }
-}
 
-.expandedImage {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  animation: fadeIn 0.5s ease-in-out;
-  transition: transform 0.3s ease;
-}
+  .modalContent {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+  }
 
-.closeButton {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: 2px solid white;
-  border-radius: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
-  font-size: 16px;
-}
+  .modalOverlay.open .modalContent {
+    transform: scale(1);
+  }
 
-.next, .prev{
-  width: 30%;
-  height: 30%;
-  color: white;
-  background-color: transparent;
-  padding: 5px;
-  cursor: pointer;
-  font-weight: bolder;
-  font-size: larger;
-  border: none;
-}
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
-.prev{
-  position: absolute;
-  top: 50%;
-}
+  .expandedImage {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+    transition: transform 0.3s ease;
+  }
 
-.next{
-  position: absolute;
-  left: 80%;
-  top: 50%;
-}
+  .closeButton {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
 
-button:focus{
-  background-color: transparent;
-  transform: none;
-}
+  .next,
+  .prev {
+    width: 30%;
+    height: 30%;
+    color: white;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: larger;
+    border: none;
+  }
 
-button:active{
-  color: none;
-  background-color: none;
-  transform: none;
+  .prev {
+    position: absolute;
+    top: 50%;
+  }
+
+  .next {
+    position: absolute;
+    left: 80%;
+    top: 50%;
+  }
+
+  button:focus {
+    background-color: transparent;
+    transform: none;
+  }
+
+  button:active {
+    color: none;
+    background-color: none;
+    transform: none;
+  }
 }

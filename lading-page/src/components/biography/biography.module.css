@@ -19,7 +19,18 @@
 
 .title_biography img{
     width: 100%;
+    max-width: 400px;
     height: auto;
-    margin-bottom: 35px;
+    margin: 0px auto 35px auto;
+
+    display: flex;
+    justify-content: center;
 }
+}
+
+@media (orientation: landscape){
+    .my_biography{
+        max-width: 400px;
+    }
+
 }
