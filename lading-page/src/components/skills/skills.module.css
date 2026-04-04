@@ -89,11 +89,17 @@
         min-height: 220px;
         padding: 20px 10px;
         justify-content: flex-start;
+        transition: 0.3s;
         
         .title_card{
             word-break: break-all;
             padding: 0px;
             margin-bottom: 15px;
         }
+    }
+
+    .card_skills:hover{
+        transform: translateY(-10%);
+        transition: 0.3s;
     }
 }
