@@ -1,14 +1,18 @@
 import React from "react";
+import {motion, useScroll, useTransform} from "framer-motion";
 import Title_biography from "../media/imgs/title_biography.png"
 import style from './biography.module.css'
 
 export default function biography() {
+  const { scrollYProgress } = useScroll();
+  const opacity = useTransform(scrollYProgress, [0, 0.15], [0, 1]);
+
   return (
     <section className={style.my_biography}>
       <div className={style.biography}>
-        <div className={style.title_biography}>
+        <motion.div className={style.title_biography} style={{ opacity, transformOrigin: "10%" }}>
           <img src={Title_biography} alt="imagem titulo" />
-        </div>
+        </motion.div>
         <div className={style.text_biography}>
           <p>
             Minha história com a modificação corporal começou em 2017. Em 2019,

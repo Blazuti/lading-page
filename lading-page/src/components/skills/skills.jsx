@@ -1,12 +1,19 @@
 import React from "react";
+import {motion, useScroll, useTransform} from "framer-motion";
 import Icon_diamond from "../media/icon/diamond.png";
 import Icon_segurity from "../media/icon/segurity.png";
 import Icon_star from "../media/icon/star.png";
 import style from "./skills.module.css";
 
 export default function skills() {
+
+  const { scrollYProgress } = useScroll();
+  const opacity = useTransform(scrollYProgress, [0.2, 0.35], [0, 1]);
+
   return (
-    <section className={style.skills}>
+    <motion.section className={style.skills}
+    style={{ opacity, transformOrigin: "0%" }}
+    >
       <div className={style.container_skills}>
         <div className={style.card_skills}>
           <div className={style.title_card}>
@@ -47,6 +54,6 @@ export default function skills() {
           </p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

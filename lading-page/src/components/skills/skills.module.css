@@ -99,7 +99,7 @@
     }
 
     .card_skills:hover{
-        transform: translateY(-10%);
+        transform: translateY(-5%);
         transition: 0.3s;
     }
 }
