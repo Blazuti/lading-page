@@ -1,0 +1,46 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+
+.works{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+#carouselExample{
+    height: fit-content;
+    max-height: 80vh;
+    width: 50vw;
+    margin: 15% auto 15% auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px var(--color-elements);
+    overflow: hidden;
+}
+
+.carousel-inner{
+    height: auto;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.carousel-item{
+    height: auto;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    #carouselExample{
+        width: 90vw;
+    }
+}
+}
+@import 'bootstrap/dist/css/bootstrap.min.css';
