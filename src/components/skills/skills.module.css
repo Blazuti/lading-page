@@ -70,7 +70,7 @@
 
 @media (min-width: 680px){
     .skills{
-        max-width: 100%;
+        width: 100%;
         max-height: 70vh;
         display: flex;
         margin-top: 50px;
