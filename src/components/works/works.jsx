@@ -1,7 +1,7 @@
 import React from "react";
-import Imagem001 from "../../../public/img_trabalho001.png";
-import Imagem002 from "../../../public/img_trabalho002.png";
-import Imagem003 from "../../../public/img_trabalho003.png";
+import Imagem001 from "../../../public/images/img_trabalho001.png";
+import Imagem002 from "../../../public/images/img_trabalho002.png";
+import Imagem003 from "../../../public/images/img_trabalho003.png";
 import "./custom.scss";
 
 
