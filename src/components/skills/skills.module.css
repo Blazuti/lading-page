@@ -59,8 +59,15 @@
     width: 30px;
 }
 
-@media (orientation: landscape){
-    
+@media screen and (orientation: landscape) and (max-height:500px){
+    .skills{
+        min-height: fit-content;
+        margin-bottom: 100px;
+    }
+    .container_skills{
+        min-height: 100%;
+        padding: 20px 0px;
+    }
     .card_skills{
         margin-bottom: 10px;
     }
