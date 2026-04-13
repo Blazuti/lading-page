@@ -1,4 +1,5 @@
 import React from "react";
+import {motion, useScroll, useTransform} from "framer-motion";
 import style from "./contact.module.css";
 import img_contact from "../media/imgs/contact.png";
 import img_instagram from "../media/icon/instagram.png";
@@ -6,8 +7,10 @@ import img_whatsapp from "../media/icon/whatsapp.png";
 
 
 export default function Contact() {
+  const { scrollYProgress } = useScroll();
+    const opacity = useTransform(scrollYProgress, [0.05, 1], [0, 1]);
   return (
-    <div className={style.contact}>
+    <motion.div className={style.contact} style={{ opacity, transformOrigin: "0%" }}>
       <div className={style.container_contact}>
         <div className={style.img_contatct}>
           <img src={img_contact} alt="Contact" />
@@ -31,6 +34,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

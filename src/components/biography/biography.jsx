@@ -6,12 +6,12 @@ import img_angelica from "../media/imgs/img_angelica002.png"
 
 export default function biography() {
   const { scrollYProgress } = useScroll();
-  const opacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
+  const opacity = useTransform(scrollYProgress, [0.07, 0.22], [0.3, 1]);
 
   return (
     <section className={style.my_biography}>
       <div className={style.biography}>
-        <motion.div className={style.title_biography} style={{ opacity, transformOrigin: "10%" }}>
+        <motion.div className={style.title_biography} style={{ opacity, transformOrigin: "0%" }}>
           <img src={Title_biography} alt="imagem titulo" />
         </motion.div>
         <div className={style.text_biography}>
@@ -39,9 +39,9 @@ export default function biography() {
           </p>
         </div>
       </div>
-      <div className={style.img_biography}>
+      <motion.div className={style.img_biography} style={{ opacity, transformOrigin: "0%" }}>
         <img src={img_angelica} alt="imagem de biografia" />
-      </div>
+      </motion.div>
     </section>
   );
 }
